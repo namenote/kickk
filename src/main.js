@@ -1681,7 +1681,7 @@ Link Download: "+idU.id+"\n";
             for (var i = 0; i < listMember.length; i++) {
                 if(listMember[i].mid==param){
 					let namanya = listMember[i].dn;
-					seq.text = 'สวัสดี @'+namanya+', คนสวยได้กี่ควยแล้วครับ ^_^';
+					seq.text = 'สวัสดี @'+namanya+', ยินดีต้อนรับครับ ^_^';
 					let midnya = listMember[i].mid;
 					let kata = seq.text.split("@").slice(0,1);
 					let kata2 = kata[0].split("");
