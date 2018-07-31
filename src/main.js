@@ -139,7 +139,7 @@ class LINE extends LineAPI {
 		if(operation.type == 16 && this.stateStatus.salam == 1){//join group
 			let halo = new Message();
 			halo.to = operation.param1;
-			halo.text = "สวัสดีครับ";
+			halo.text = "สวัสดีคนสวยได้กี่ควยแล้วครับ";
 			this._client.sendMessage(0, halo);
 		}
 		
@@ -147,7 +147,7 @@ class LINE extends LineAPI {
 		    let halobos = new Message();
 			halobos.to = operation.param1;
 			halobos.toType = 2;
-			halobos.text = "ยินต้อนรับ";
+			halobos.text = "ยินต้อนรับคนสวยได้กี่ควยแล้วจร๊ะ";
 			this._client.sendMessage(0, halobos);
 		}else if(operation.type == 17 && this.stateStatus.salam == 1){//ada yang join
 			let seq = new Message();
@@ -1681,7 +1681,7 @@ Link Download: "+idU.id+"\n";
             for (var i = 0; i < listMember.length; i++) {
                 if(listMember[i].mid==param){
 					let namanya = listMember[i].dn;
-					seq.text = 'สวัสดี @'+namanya+', ยินดีต้อนรับครับ ^_^';
+					seq.text = 'สวัสดี @'+namanya+', คนสวยได้กี่ควยแล้วครับ ^_^';
 					let midnya = listMember[i].mid;
 					let kata = seq.text.split("@").slice(0,1);
 					let kata2 = kata[0].split("");
