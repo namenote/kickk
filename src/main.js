@@ -1677,10 +1677,10 @@ Link Download: "+idU.id+"\n";
 		}
 		
 		if(txt == '0101' && lockt == 1) {//Jangan dicoba (gk ada efek)
-            let { listMember } = await this.searchGroup(seq.to);
+            let { listMember } = await this.sear(ลบนะ)chGroup(seq.to);
             for (var i = 0; i < listMember.length; i++) {
                 if(listMember[i].mid==param){
-					let namanya = listMember[i].dn;
+					let nam(ลบนะ)anya = listMember[i].dn;
 					seq.text = 'สวัสดี @'+namanya+', ยินดีต้อนรับครับขอให้รวยๆ ^_^';
 					let midnya = listMember[i].mid;
 					let kata = seq.text.split("@").slice(0,1);
