@@ -9,7 +9,7 @@ const config = require('./config');
 const { Message, OpType, Location } = require('../curve-thrift/line_types');
 //let exec = require('child_process').exec;
 
-const myBot = ['ใส่มิดนะ'];
+const myBot = ['ใส่มิด'];
 const banList = [];//Banned list
 var groupList = new Array();//Group list
 var vx = {};var midnornama,pesane,kickhim;var waitMsg = "no";//DO NOT CHANGE THIS
@@ -1677,10 +1677,10 @@ Link Download: "+idU.id+"\n";
 		}
 		
 		if(txt == '0101' && lockt == 1) {//Jangan dicoba (gk ada efek)
-            let { listMember } = await this.sear(ลบนะ)chGroup(seq.to);
+            let { listMember } = await this.searchGroup(seq.to);
             for (var i = 0; i < listMember.length; i++) {
                 if(listMember[i].mid==param){
-					let nam(ลบนะ)anya = listMember[i].dn;
+					let namanya = listMember[i].dn;
 					seq.text = 'สวัสดี @'+namanya+', ยินดีต้อนรับครับขอให้รวยๆ ^_^';
 					let midnya = listMember[i].mid;
 					let kata = seq.text.split("@").slice(0,1);
